@@ -34,5 +34,6 @@ pipeline {
                 echo 'Application Deployed Successfully!'
             }
         }
+
     }
 }
