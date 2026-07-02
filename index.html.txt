@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CI/CD Pipeline Project</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    text-align:center;
+}
+
+header{
+    background:#D24939;
+    color:white;
+    padding:20px;
+}
+
+.container{
+    width:80%;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.pipeline{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.step{
+    background:#D24939;
+    color:white;
+    padding:15px 20px;
+    border-radius:8px;
+    margin:10px;
+    font-weight:bold;
+    min-width:120px;
+}
+
+.arrow{
+    font-size:30px;
+    color:#333;
+}
+
+button{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#218838;
+}
+
+footer{
+    background:#222;
+    color:white;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Jenkins CI/CD Pipeline Project</h1>
+<p>GitHub | Jenkins | Docker Integration</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Project Workflow</h2>
+
+<div class="pipeline">
+
+<div class="step">GitHub</div>
+
+<div class="arrow">➡</div>
+
+<div class="step">Jenkins</div>
+
+<div class="arrow">➡</div>
+
+<div class="step">Build</div>
+
+<div class="arrow">➡</div>
+
+<div class="step">Docker Image</div>
+
+<div class="arrow">➡</div>
+
+<div class="step">Docker Container</div>
+
+<div class="arrow">➡</div>
+
+<div class="step">Deployment</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Project Description</h2>
+
+<p>
+Whenever developers push code to GitHub, Jenkins automatically
+fetches the latest code, builds the project, creates a Docker image,
+runs a Docker container, and deploys the application successfully.
+</p>
+
+<button onclick="pipeline()">Run Pipeline</button>
+
+</div>
+
+</div>
+
+<footer>
+Created by Surya | DevOps CI/CD Project
+</footer>
+
+<script>
+function pipeline(){
+alert("CI/CD Pipeline Executed Successfully!");
+}
+</script>
+
+</body>
+</html>
